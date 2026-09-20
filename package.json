@@ -1,0 +1,56 @@
+{
+  "name": "@ground-zero-llc/gz-gateway",
+  "version": "0.1.0",
+  "description": "OpenAI-compatible AI gateway — rate limiting, caching, failover, cost tracking, load balancing. Zero vendor lock-in.",
+  "author": "Ground Zero LLC <hello@ground-zero.dev>",
+  "publisher": "Ground Zero LLC",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "gz-gateway": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsx watch src/cli.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit",
+    "start": "tsx src/cli.ts serve"
+  },
+  "keywords": [
+    "ai-gateway",
+    "openai-proxy",
+    "llm-gateway",
+    "rate-limiting",
+    "cost-tracking",
+    "failover",
+    "ai-infrastructure",
+    "ground-zero-llc"
+  ],
+  "dependencies": {
+    "commander": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oke3/gz-gateway.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oke3/gz-gateway/issues"
+  },
+  "homepage": "https://github.com/oke3/gz-gateway#readme"
+}
