@@ -523,6 +523,9 @@ npm test
 | Project | Description |
 |---------|-------------|
 | [gz-context-engine](https://github.com/oke3/gz-context-engine) | Production-grade context engine for AI agents — hybrid RAG, reranking, token-aware assembly |
+| [gz-agent](https://github.com/oke3/gz-agent) | Production-grade agent runtime — tool calling, state machines, multi-agent coordination |
+| [gz-eval](https://github.com/oke3/gz-eval) | Evaluation framework — golden test sets, quality scoring, A/B comparison |
+| [gz-guardrails](https://github.com/oke3/gz-guardrails) | AI safety middleware — PII detection, prompt injection defense, content moderation |
 | [gz-codemap](https://github.com/oke3/gz-codemap) | Codebase topology mapper — AST-based code maps for AI agents |
 | [gz-modelrouter](https://github.com/oke3/gz-modelrouter) | Smart LLM model router — pick the best model per task |
 | [gz-sessions](https://github.com/oke3/gz-sessions) | Persistent session management for AI agent conversations |
